@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irpen DarkNet</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Тёмный фон */
+            color: #d3d3d3; /* Светло-серый текст */
+            font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт */
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent; /* Без фона */
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Белый текст */
+            text-decoration: none;
+            animation: blink 1.5s infinite; /* Мигание текста */
+            transition: color 0.3s; /* Плавное изменение цвета при наведении */
+        }
+        .logo:hover {
+            color: #00ff00; /* Зелёный цвет при наведении */
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff; /* Белый текст для заголовка */
+            text-align: center;
+            margin: 20px 0;
+            transition: color 1s; /* Плавное изменение цвета при наведении */
+        }
+        h1:hover {
+            color: #00ff00; /* Зелёный цвет при наведении */
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .product {
+            background-color: #222;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #444;
+        }
+        .product h2 {
+            margin: 0 0 10px 0;
+            color: #00ff00;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .order-btn {
+            background-color: #00ff00;
+            color: #1a1a1a;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s; /* Плавное изменение цвета кнопки */
+        }
+        .order-btn:hover {
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://darknet.pp.ua" target="_blank" class="logo">Irpen DarkNet</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to IDN</h1>
+        <p>Shop anonymously on the dark web. All transactions are safe and confidential.</p>
+
+        <!-- Продукт 1 -->
+        <div class="product">
+            <h2>Item 1: Electronic gadget</h2>
+            <p>Description: New gadget with unique functions.</p>
+            <p>Delivery time: In 2 hours</p>
+            <p>Price: 10$</p>
+            <button class="order-btn" onclick="window.location.href='https://example.com/order';">Order</button>
+        </div>
+
+        <!-- Продукт 2 -->
+        <div class="product">
+            <h2>Item 1: Electronic gadget</h2>
+            <p>Description: New gadget with unique functions.</p>
+            <p>Delivery time: In 2 hours</p>
+            <p>Price: 10$</p>
+            <button class="order-btn" onclick="window.location.href='https://example.com/order';">Order</button>
+        </div>
+
+        <!-- Продукт 3 -->
+        <div class="product">
+            <h2>Item 1: Electronic gadget</h2>
+            <p>Description: New gadget with unique functions.</p>
+            <p>Delivery time: In 2 hours</p>
+            <p>Price: 10$</p>
+            <button class="order-btn" onclick="window.location.href='https://example.com/order';">Order</button>
+        </div>
+    </div>
+</body>
+</html>

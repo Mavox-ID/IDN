@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment for the order - Irpen DarkNet</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Тёмный фон в стиле IDN */
+            color: #d3d3d3; /* Светло-серый текст */
+            font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #222; /* Тёмный фон контейнера */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Усиленная тень для драматичности */
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Анимация появления */
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff; /* Белый текст */
+            margin-bottom: 20px;
+            animation: blink 1.5s infinite; /* Мигание заголовка */
+            transition: color 0.3s; /* Плавное изменение цвета при наведении */
+        }
+        h1:hover {
+            color: #00ff00; /* Зелёный при наведении */
+        }
+        .card-info {
+            background-color: #333; /* Тёмный фон для карточки */
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #d3d3d3;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .card-info:hover {
+            transform: scale(1.05); /* Увеличение при наведении */
+        }
+        .card-info span {
+            display: block;
+            margin-bottom: 12px;
+        }
+        .card-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff00; /* Зелёный номер карты */
+            letter-spacing: 2px;
+            animation: pulse 0.3s infinite; /* Пульсация номера карты */
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+        .warning {
+            color: #ff5555; /* Красный для предупреждений */
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            10% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .card-info span:hover {
+            color: #007bff; /* Синий при наведении на текст */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Оплата заказа на IDN</h1>
+
+        <div class="card-info">
+            <span>To transfer funds, use the details below.:</span>
+            <span class="card-number">4441 1144 3224 1378</span>
+            <span>Sum: <span id="price"></span>Please indicate the exact amount</span>
+            <span>==================</span>
+            <span>API transform</span>
+        </div>
+
+        <div class="footer">
+            <p>Irpen DarkNet - All transactions are protected.</p>
+            <p class="warning">If you send less than the amount:</p>
+            <p>The order will be frozen until the full amount is received.</p>
+            <p class="warning">If you send more than the amount:</p>
+            <p>Payment will be accepted but the remainder will go as a tip.</p>
+            <p class="warning">If you do not pay:</p>
+            <p>The order will be cancelled in 2 days.</p>
+            <p class="warning">If the order is cancelled after payment:</p>
+            <p>We will return the money within 2 days.</p>
+        </div>
+    </div>
+</body>
+</html>
