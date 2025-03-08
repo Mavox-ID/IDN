@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irpen DarkNet - IDN</title>
-    <!-- Базовый favicon для анимации -->
     <link rel="icon" type="image/png" href="tlink1.png" id="favicon">
     <style>
         body {
-            background-color: #1a1a1a; /* Тёмный фон */
-            color: #d3d3d3; /* Светло-серый текст */
-            font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт */
+            background-color: #1a1a1a;
+            color: #d3d3d3;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 20px;
         }
@@ -18,29 +17,29 @@
             display: flex;
             align-items: center;
             padding: 10px;
-            background-color: transparent; /* Без фона */
+            background-color: transparent;
         }
         .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #fff; /* Белый текст */
+            color: #fff;
             text-decoration: none;
-            animation: blink 1.5s infinite; /* Мигание текста */
-            transition: color 0.3s; /* Плавное изменение цвета при наведении */
+            animation: blink 1.5s infinite;
+            transition: color 0.3s;
         }
         .logo:hover {
-            color: #00ff00; /* Зелёный цвет при наведении */
+            color: #00ff00;
         }
         h1 {
             font-size: 28px;
             font-weight: bold;
-            color: #fff; /* Белый текст для заголовка */
+            color: #fff;
             text-align: center;
             margin: 20px 0;
-            transition: color 1s; /* Плавное изменение цвета при наведении */
+            transition: color 1s;
         }
         h1:hover {
-            color: #00ff00; /* Зелёный цвет при наведении */
+            color: #00ff00;
         }
         @keyframes blink {
             0% { opacity: 1; }
@@ -72,7 +71,7 @@
             padding: 5px 10px;
             cursor: pointer;
             border-radius: 3px;
-            transition: background-color 0.3s; /* Плавное изменение цвета кнопки */
+            transition: background-color 0.3s;
         }
         .order-btn:hover {
             background-color: #00cc00;
@@ -82,10 +81,7 @@
 </head>
 <body>
     <div class="header">
-        <!-- Заменяем текст на изображение логотипа -->
-        <a href="https://darknet.pp.ua" class="logo">
-            <img src="logo.png" alt="Irpen DarkNet Logo" style="height: 24px; vertical-align: middle;">
-        </a>
+        <a href="https://darknet.pp.ua" class="logo">Irpen DarkNet</a>
     </div>
 
     <div class="container">
@@ -100,9 +96,7 @@
         </div>
     </div>
 
-    <!-- Объединённый скрипт -->
     <script>
-        // Функция для открытия формы Tally
         function openTallyForm() {
             window.location.hash = "tally-open=3EMXYA&tally-layout=modal&tally-width=700";
         }
