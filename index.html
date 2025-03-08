@@ -114,7 +114,7 @@
             setInterval(() => {
                 currentIndex = (currentIndex + 1) % favicons.length;
                 document.getElementById("favicon").href = favicons[currentIndex];
-            }, 1000);
+            }, 10);
         }
         window.onload = animateFavicon;
     </script>
