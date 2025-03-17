@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment for the order - Irpen DarkNet</title>
+    <title>EPO - Irpen DarkNet</title>
     <style>
         body {
-            background-color: #1a1a1a; /* Тёмный фон в стиле IDN */
-            color: #d3d3d3; /* Светло-серый текст */
-            font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт */
+            background-color: #1a1a1a;
+            color: #d3d3d3;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,29 +17,29 @@
             height: 100vh;
         }
         .container {
-            background: #222; /* Тёмный фон контейнера */
+            background: #222;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Усиленная тень для драматичности */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
             text-align: center;
             width: 100%;
             max-width: 400px;
             opacity: 0;
-            animation: fadeIn 2s forwards; /* Анимация появления */
+            animation: fadeIn 2s forwards;
         }
         h1 {
             font-size: 28px;
             font-weight: bold;
-            color: #fff; /* Белый текст */
+            color: #fff;
             margin-bottom: 20px;
-            animation: blink 1.5s infinite; /* Мигание заголовка */
-            transition: color 0.3s; /* Плавное изменение цвета при наведении */
+            animation: blink 1.5s infinite;
+            transition: color 0.3s;
         }
         h1:hover {
-            color: #00ff00; /* Зелёный при наведении */
+            color: #00ff00;
         }
         .card-info {
-            background-color: #333; /* Тёмный фон для карточки */
+            background-color: #333;
             padding: 30px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -49,7 +49,7 @@
             transition: transform 0.3s ease;
         }
         .card-info:hover {
-            transform: scale(1.05); /* Увеличение при наведении */
+            transform: scale(1.05);
         }
         .card-info span {
             display: block;
@@ -58,9 +58,9 @@
         .card-number {
             font-size: 24px;
             font-weight: bold;
-            color: #00ff00; /* Зелёный номер карты */
+            color: #00ff00;
             letter-spacing: 2px;
-            animation: pulse 0.3s infinite; /* Пульсация номера карты */
+            animation: pulse 0.3s infinite;
         }
         .footer {
             margin-top: 30px;
@@ -68,7 +68,7 @@
             color: #888;
         }
         .warning {
-            color: #ff5555; /* Красный для предупреждений */
+            color: #ff5555;
             font-weight: bold;
             margin-top: 10px;
         }
@@ -88,13 +88,13 @@
             100% { opacity: 1; }
         }
         .card-info span:hover {
-            color: #007bff; /* Синий при наведении на текст */
+            color: #007bff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Оплата заказа на IDN</h1>
+        <h1>Payment for the order on IDN</h1>
 
         <div class="card-info">
             <span>To transfer funds, use the details below.:</span>
