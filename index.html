@@ -77,7 +77,6 @@
             background-color: #00cc00;
         }
     </style>
-    <script src="https://tally.so/widgets/embed.js" async></script>
 </head>
 <body>
     <div class="header">
@@ -95,21 +94,5 @@
             <p>Please wait a while!</p>
         </div>
     </div>
-
-    <script>
-        function openTallyForm() {
-            window.location.hash = "tally-open=3EMXYA&tally-layout=modal&tally-width=700";
-        }
-
-        function animateFavicon() {
-            const favicons = ["tlink1.png", "tlink2.png", "tlink3.png"];
-            let currentIndex = 0;
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % favicons.length;
-                document.getElementById("favicon").href = favicons[currentIndex];
-            }, 10);
-        }
-        window.onload = animateFavicon;
-    </script>
 </body>
 </html>
