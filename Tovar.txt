@@ -1,7 +1,0 @@
-<div class="product">
-            <h2>Information</h2>
-            <p>Info-1</p>
-            <p>Info-2</p>
-            <p>Price: $</p>
-            <button class="order-btn" onclick="openTallyForm()">Order</button>
-        </div>
