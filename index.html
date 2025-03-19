@@ -64,6 +64,14 @@
         .product p {
             margin: 5px 0;
         }
+        /* Исправляем класс для email */
+        .email-link {
+            color: #d3d3d3; /* Начальный цвет такой же, как у остального текста */
+            transition: color 1s; /* Плавный переход, как у h1 */
+        }
+        .email-link:hover {
+            color: #00ff00; /* Зелёный при наведении */
+        }
         .order-btn {
             background-color: #00ff00;
             color: #1a1a1a;
@@ -93,9 +101,9 @@
             <p>Warning!</p>
             <p>There are no products on the site yet</p>
             <p>Please wait a while!</p>
-			<p>====================</p>
-			<p>Post for Information:</p>
-			<p>idn.online@darknet.pp.ua</p>
+            <p>====================</p>
+            <p>Post for Information:</p>
+            <p class="email-link">idn.online@darknet.pp.ua</p>
         </div>
     </div>
 
